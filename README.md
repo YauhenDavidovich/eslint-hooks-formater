@@ -34,7 +34,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "hooks-formatter/rule-name": 2
+        "hooks-formatter/line-breaks": 2
     }
 }
 ```

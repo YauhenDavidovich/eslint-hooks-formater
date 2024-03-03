@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-hooks-formatter",
-  "version": "0.0.3",
+  "version": "0.0.13",
   "description": "eslint plugin for formatting react hooks",
   "keywords": [
     "eslint",
