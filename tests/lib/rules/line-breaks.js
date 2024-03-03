@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 const rule = require("../../../lib/rules/line-breaks"),
-  RuleTester = require("eslint").RuleTester;
+    RuleTester = require("eslint").RuleTester;
 
 
 //------------------------------------------------------------------------------
@@ -19,13 +19,15 @@ const rule = require("../../../lib/rules/line-breaks"),
 const ruleTester = new RuleTester();
 ruleTester.run("line-breaks", rule, {
   valid: [
-    // give me some code that won't trigger a warning
+    {
+      code: "useMemo(() => {\n// Some code here\n});",
+    },
   ],
 
   invalid: [
     {
-      code: "skip",
-      errors: [{ message: "Fill me in.", type: "Me too" }],
+      code: "useMemo(()=> {\n// Some code here\n}, []);",
+      errors: [{ message: "Expected line break after opening bracket of callback function." }],
     },
   ],
 });
