@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-hooks-formatter",
-  "version": "0.0.23",
+  "version": "0.0.25",
   "description": "eslint plugin for formatting react hooks",
   "keywords": [
     "eslint",
@@ -8,6 +8,7 @@
     "eslint-plugin"
   ],
   "author": "Yauhen Davidovich",
+  "repository": "https://github.com/YauhenDavidovich/eslint-plugin-hooks-formatter",
   "main": "./lib/index.js",
   "exports": "./lib/index.js",
   "scripts": {
